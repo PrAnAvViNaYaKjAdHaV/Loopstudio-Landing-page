@@ -1,0 +1,81 @@
+$color: (
+  White: hsl(0, 0%, 100%),
+  Black: hsl(0, 0%, 0%),
+  Dark-Gray: hsl(0, 0%, 55%),
+  Very-Dark-Gray: hsl(0, 0%, 41%),
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Navcontainer {
+  nav {
+    background-image: url(images/mobile/image-hero.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position:cover;
+    background-size: 100% 100% ;
+    .Nav {
+      display: flex;
+      padding: 2rem 0.9rem 0.9rem 0.9rem;
+      justify-content: space-between;
+      align-items: center;
+      img {
+        height: 0.9rem;
+      }
+      h1{
+        color: white;
+        font-size: 1.8rem;
+      }
+    }
+    ul {
+      display: none;
+    }
+    .navContent{
+       display: flex;
+       height: 75vh;
+       justify-content: center;
+       align-items: center;
+       margin: 0 0.8rem;
+         .cont{
+           border: 2px solid white;
+           max-width: 95%;
+           padding: 1.8rem;
+           min-height: 35%;
+           h1{
+             color: white;
+             font-size: 3.5rem;
+             
+           }
+         }
+    }
+  }
+}
+
+.Contentcontainer {
+    .vrImage{
+      padding: 1rem;
+      text-align: center;
+      line-height: 2rem;
+      img{
+        width: 100%;
+        margin:3rem auto;
+      }
+      p{
+        padding: 1.6rem;
+        font-size: 1.2rem
+      }
+      h1{
+        font-size: 2.5rem;
+      }
+    }
+}
